@@ -13,6 +13,7 @@
   transform: translate(-50%, -50%);
   border-radius: 25px;
   padding: 18px;
+  z-index: 12;
 }
 .swap {
   display: flex;
@@ -27,6 +28,9 @@
   width: 100%;
   margin: 10px;
   margin-right: 10px;
+}
+.row1-icon {
+  cursor: pointer;
 }
 .row-input {
   margin: 5px 0px 5px 0px;
@@ -142,4 +146,9 @@
   border: none;
   height: 2.4rem;
   width: 100%;
+}
+@media (max-width: 552px) {
+  .box {
+    width: 85%;
+  }
 }

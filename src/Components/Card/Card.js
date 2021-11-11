@@ -3,6 +3,8 @@ import Tokenmodal from "../Modal/Tokenmodal";
 import "./Card.css";
 import fetch from "../../helper/fetch";
 import ConnectWallet from "../Modal/ConnectWallet";
+import Navigation from "../Navigation";
+import SettingModal from "../Modal/SettingModal";
 
 const Card = () => {
   const [selectedValue, setSelectedValue] = useState();
@@ -11,6 +13,7 @@ const Card = () => {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
   const callFetch = async () => {
     const tokenData = await fetch;
     setSelectedValue(tokenData?.[0]);
@@ -29,6 +32,9 @@ const Card = () => {
   const handleClickOpen2 = () => {
     setOpen2(true);
   };
+  const handleClickOpen3 = () => {
+    setOpen3(true);
+  };
 
   const handleClose = (value) => {
     setOpen(false);
@@ -42,14 +48,9 @@ const Card = () => {
   const handleClose2 = () => {
     setOpen2(false);
   };
-
-  // const handleSwap = (value) => {
-  //   setOpen(false);
-  //   setSelectedValue(value);
-  //   setOpen1(false);
-  //   setSelectedValue1(value);
-  //   setSelectedValue = setSelectedValue1;
-  // };
+  const handleClose3 = () => {
+    setOpen3(false);
+  };
 
   return (
     <div className="header">
@@ -59,7 +60,7 @@ const Card = () => {
             <h1 className="row1-title">Swap</h1>
           </div>
           <div className="row1-icon">
-            <i className="fas fa-cog"></i>
+            <i className="fas fa-cog" onClick={handleClickOpen3}></i>
           </div>
         </div>
 
@@ -129,6 +130,11 @@ const Card = () => {
         handleClosebtn={handleClose2}
         open2={open2}
       ></ConnectWallet>
+      <SettingModal
+        handleOpenbtn2={handleClickOpen3}
+        handleClosebtn2={handleClose3}
+        open3={open3}
+      ></SettingModal>
     </div>
   );
 };
