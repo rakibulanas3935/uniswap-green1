@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: rgb(64,68,79);
+  color:rgb(143,150,172);
+  border:1px solid transparent;
+
+}
