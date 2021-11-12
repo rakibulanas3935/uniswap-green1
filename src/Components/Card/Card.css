@@ -5,8 +5,8 @@
 
 .box {
   background: #004639f1;
-  width: 40%px;
-  height: 300px;
+  width: 40%;
+  height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
