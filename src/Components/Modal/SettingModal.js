@@ -9,7 +9,7 @@ const SettingModal = ({ handleOpenbtn2, open3, handleClosebtn2 }) => {
     left: "52%",
     transform: "translate(-50%, -50%)",
     width: "20rem",
-    bgcolor: "#2c2f36",
+    bgcolor: "#003c31",
     borderRadius: "20px",
     border: "none",
     padding: "1rem",
@@ -55,7 +55,7 @@ const SettingModal = ({ handleOpenbtn2, open3, handleClosebtn2 }) => {
                 checked
               />
               <label for="toggle-on" class="btn-radio">
-                Yes
+                On
               </label>
               <input
                 id="toggle-off"
@@ -65,33 +65,31 @@ const SettingModal = ({ handleOpenbtn2, open3, handleClosebtn2 }) => {
                 type="radio"
               />
               <label for="toggle-off" class="btn-radio">
-                No
+                off
               </label>
             </div>
           </div>
           <div className="section5-part2">
-            <h1 className="section5-text">Auto router ?</h1>
+            <h1 className="section5-text">Export router ?</h1>
             <div class="toggle-button-cover">
               <input
-                id="toggle-on"
-                class="toggle toggle-left"
-                name="toggle"
+                id="toggle-on1"
+                class="toggle1 toggle-left1"
                 value="false"
+                type="radio"
+              />
+              <label for="toggle-on1" class="btn-radio1">
+                On
+              </label>
+              <input
+                id="toggle-off1"
+                class="toggle1 toggle-right1"
+                value="true"
                 type="radio"
                 checked
               />
-              <label for="toggle-on" class="btn-radio">
-                Yes
-              </label>
-              <input
-                id="toggle-off"
-                class="toggle toggle-right"
-                name="toggle"
-                value="true"
-                type="radio"
-              />
-              <label for="toggle-off" class="btn-radio">
-                No
+              <label for="toggle-off1" class="btn-radio1">
+                Off
               </label>
             </div>
           </div>

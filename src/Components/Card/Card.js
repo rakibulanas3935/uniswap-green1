@@ -3,8 +3,9 @@ import Tokenmodal from "../Modal/Tokenmodal";
 import "./Card.css";
 import fetch from "../../helper/fetch";
 import ConnectWallet from "../Modal/ConnectWallet";
-import Navigation from "../Navigation";
+
 import SettingModal from "../Modal/SettingModal";
+import Navbar from "../Navbar";
 
 const Card = () => {
   const [selectedValue, setSelectedValue] = useState();
@@ -54,6 +55,7 @@ const Card = () => {
 
   return (
     <div className="header">
+      <Navbar></Navbar>
       <div className="box">
         <div className="swap">
           <div className="row1">

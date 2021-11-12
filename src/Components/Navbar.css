@@ -1,0 +1,127 @@
+nav {
+  width: 100%;
+  background: #003c31;
+}
+.position {
+  display: flex;
+  justify-content: space-between;
+  z-index: 32;
+  position: relative;
+  align-items: center;
+  padding: 1rem;
+}
+.logo {
+  width: 35%;
+}
+.logo:hover {
+  cursor: pointer;
+}
+.nav-item {
+  display: flex;
+  width: 30%;
+  padding: 0.7rem;
+  justify-content: space-between;
+  background-color: #004639f1;
+  border-radius: 16px;
+}
+.nav-item li {
+  list-style-type: none;
+}
+.nav-item li a {
+  color: #e6e6e6;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-item li a:hover {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-item li .active {
+  color: #ffffff;
+  background-color: #01977cab;
+  padding: 0.65rem;
+  border-radius: 12px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-item li a:active {
+  color: #ffffff;
+  background-color: #01977cab;
+  padding: 0.7rem;
+  border-radius: 12px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.part3-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 3%;
+  width: 30%;
+}
+.etherthium {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.navtext {
+  color: white;
+  font-size: 16px;
+  margin-left: 12px;
+  font-weight: 600px;
+}
+.btn-connet-wallet {
+  background-color: #006855;
+  border: 1px solid transparent;
+  color: #6afff8;
+  padding: 0.7rem;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-connet-wallet:hover {
+  background-color: #005041;
+  border: 1px solid transparent;
+  color: #6afff8;
+  padding: 0.7rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.fa-ellipsis-h {
+  color: white;
+}
+@media (max-width: 952px) {
+  div.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .nav-item {
+    position: absolute;
+    top: 760%;
+    left: 35%;
+  }
+  .part3-nav {
+    width: 42%;
+  }
+  .navtext {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .nav-item {
+    width: 50%;
+    left: 25%;
+  }
+}

@@ -1,16 +1,16 @@
 .box1 {
-  background-color: #191b1f;
+  background-color: #003c31;
   padding: 4%;
   border-radius: 20px;
 }
 .box-2 {
-  border-top: 1px solid rgba(255, 255, 255, 0.096);
-  background-color: #191b1f;
+  border-top: 1px solid #003c31;
+  background-color: #003c31;
 }
 .search {
   border-radius: 18px;
   border: none;
-  background-color: #212429;
+  background-color: #004639f1;
   font-size: 18px;
   font-weight: 500;
   width: 93%;
@@ -22,7 +22,7 @@
   border-radius: 20px;
 }
 .search:focus {
-  border: 1px solid rgba(85, 129, 250, 0.568);
+  border: 1px solid rgba(4, 124, 118, 0.568);
 }
 .search-box {
   margin: 10px 0 10px 0;
@@ -63,7 +63,7 @@
   height: 50%;
 }
 .token-coin-btn-modal:hover {
-  background-color: #5d5f63d3;
+  background-color: #01977cab;
   cursor: pointer;
 }
 .box-btn {
@@ -73,7 +73,7 @@
   padding: 10px 10px;
 }
 .box-btn:hover {
-  background-color: rgb(61, 61, 59);
+  background-color: #01977cab;
   cursor: pointer;
 }
 .img {
@@ -91,19 +91,19 @@
 .box-description {
   font-size: 12px;
   font-weight: 300;
-  color: #8f96ac;
+  color: #eaefff;
 }
 .manage-task {
   border-radius: 0px 0px 20px 20px;
-  background-color: #233143;
+  background-color: #01977cab;
   text-align: center;
 
   padding: 20px;
 }
 .task {
   cursor: pointer;
-  color: rgb(80, 144, 234);
+  color: #08ddb6ab;
 }
 .task:hover {
-  color: rgb(50, 124, 228);
+  color: #03b191ab;
 }

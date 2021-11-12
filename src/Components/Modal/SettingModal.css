@@ -19,7 +19,7 @@
 
 .setting-btn {
   margin-right: 8px;
-  background-color: rgb(33, 114, 229);
+  background-color: rgb(17, 187, 130);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 36px;
@@ -29,8 +29,8 @@
 .setting-input {
   padding: 0.3rem 0.9rem;
   border-radius: 18px;
-  border: 0.1px solid rgba(255, 255, 255, 0.164);
-  background-color: #212429;
+  border: 0.1px solid rgba(4, 175, 132, 0.164);
+  background-color: #004639f1;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
@@ -52,8 +52,8 @@
 .setting-input-minute {
   padding: 0.45rem 0.9rem;
   border-radius: 18px;
-  border: 0.1px solid rgba(255, 255, 255, 0.164);
-  background-color: #212429;
+  border: 0.1px solid rgba(12, 153, 99, 0.164);
+  background-color: #004639f1;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
@@ -69,42 +69,53 @@
   margin-bottom: 1.5rem;
 }
 
+/* radio button part */
+
 .toggle-button-cover {
-  border-radius: 18px;
+  border-radius: 10px;
   border: none;
-  background: rgb(25, 27, 31);
+  background: #02705cf1;
   cursor: pointer;
   outline: none;
   padding: 2px;
-  width: 30%;
+  width: 29%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn-radio {
   display: inline-block;
-  padding: 7px;
+  padding: 4px 10px;
   position: relative;
   text-align: center;
-  transition: background 600ms ease, color 600ms ease;
+}
+.btn-radio1 {
+  display: inline-block;
+  padding: 4px 10px;
+  position: relative;
+  text-align: center;
 }
 
 input[type="radio"].toggle {
   display: none;
+  position: absolute;
+  top: 67%;
 }
 input[type="radio"].toggle + label {
   cursor: pointer;
-  color: white;
-  border-radius: 25px;
+  color: rgb(221, 221, 221);
+  border-radius: 8px;
 }
 input[type="radio"].toggle + label:hover {
-  color: white;
-  border-radius: 25px;
+  color: rgb(44, 41, 41);
+  cursor: pointer;
 }
 input[type="radio"].toggle + label:after {
   background: #1a1a1a;
   content: "";
   height: 100%;
   position: absolute;
-  border-radius: 25px;
+  border-radius: 14px;
   top: 0;
   transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
   width: 100%;
@@ -117,18 +128,82 @@ input[type="radio"].toggle.toggle-left + label:after {
   left: 100%;
 }
 input[type="radio"].toggle.toggle-right + label {
-  margin-left: 5px;
+  margin-left: 0px;
 }
 input[type="radio"].toggle.toggle-right + label:after {
   left: -100%;
 }
 input[type="radio"].toggle:checked + label {
-  cursor: default;
+  cursor: pointer;
   color: #fff;
   transition: color 200ms;
-  background: blue;
-  border-radius: 21px;
+  background: rgb(16, 158, 92);
+  border-radius: 10px;
+}
+input[type="radio"].toggle-right:checked + label {
+  cursor: pointer;
+  color: #fff;
+  transition: color 200ms;
+  background: #003c31;
+  border-radius: 10px;
 }
 input[type="radio"].toggle:checked + label:after {
   left: 0;
+}
+
+/* button 2 */
+
+input[type="radio"].toggle1 {
+  position: absolute;
+  display: none;
+}
+input[type="radio"].toggle1 + label {
+  cursor: pointer;
+  color: white;
+  border-radius: 8px;
+}
+input[type="radio"].toggle1 + label:hover {
+  color: white;
+}
+input[type="radio"].toggle1.toggle-right1 + label {
+  margin-left: 0px;
+}
+input[type="radio"].toggle1 + label:after {
+  background: #1a1a1a;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  border-radius: 14px;
+  top: 0;
+
+  width: 100%;
+  z-index: -1;
+}
+input[type="radio"].toggle1.toggle-left1 + label {
+  border-right: 0;
+}
+input[type="radio"].toggle1.toggle-left1 + label:after {
+  left: 100%;
+}
+
+input[type="radio"].toggle1.toggle-right1 + label:after {
+  left: -100%;
+}
+input[type="radio"].toggle1:checked + label {
+  cursor: default;
+  color: #fff;
+  transition: color 200ms;
+  background: #004639f1;
+  border-radius: 10px;
+}
+input[type="radio"].toggle1:checked + label:after {
+  left: 0;
+}
+input[type="radio"].toggle-right1:checked + label {
+  cursor: pointer;
+  color: #fff;
+  transition: color 200ms;
+  background: #003c31;
+  border-radius: 10px;
 }
